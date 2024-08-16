@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List</title>
 
+    <!-- CSS 파일 링크 -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- JavaScript 파일 링크 -->
     <script defer src="./javascript/index.js"></script>
   </head>
   <body>
-    <header class="container"><h1 class="header__title">ToDo List</h1></header>
+    <!-- 헤더 섹션: 페이지 타이틀 -->
+    <header class="container">
+      <h1 class="header__title">ToDo List</h1>
+    </header>
+
+    <!-- 메인 섹션: 할일 입력 및 리스트 표시 -->
     <main class="container">
+      <!-- 설명 텍스트 -->
       <h2 class="desc">오늘 할일을 작성해 보세요.</h2>
+
+      <!-- 검색 바: 할일 입력과 추가 버튼 -->
       <div class="searchBar">
         <input
           class="searchBar__input"
@@ -22,6 +33,7 @@
         <button class="searchBar__btn">추가</button>
       </div>
 
+      <!-- 리스트 컨테이너: 할일 목록이 표시되는 영역 -->
       <section class="list-container"></section>
     </main>
   </body>
