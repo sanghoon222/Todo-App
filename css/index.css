@@ -1,9 +1,11 @@
+/* 컨테이너 기본 설정 */
 .container {
   width: 90%;
   margin: 0 auto;
   max-width: 1100px;
 }
 
+/* 헤더 스타일 */
 header.container {
   background-color: rgb(52, 103, 243);
   color: white;
@@ -14,10 +16,11 @@ header.container {
 
 .header__title {
   font-size: 24px;
-  line-height: 60px;
+  line-height: 60px; /* 헤더 높이와 일치시켜 가운데 정렬 */
   margin-left: 20px;
 }
 
+/* 설명 텍스트 스타일 */
 .desc {
   margin-top: 24px;
   margin-bottom: 24px;
@@ -25,6 +28,7 @@ header.container {
   font-size: 14px;
 }
 
+/* 검색 바 스타일 */
 .searchBar {
   display: flex;
   height: 32px;
@@ -33,10 +37,9 @@ header.container {
 
 .searchBar__input {
   flex: 1;
-  border: none;
   border: 1px solid black;
-  border-right: none;
-  border-radius: 4px 0 0 4px;
+  border-right: none; /* 버튼과 연결되는 부분은 테두리 제거 */
+  border-radius: 4px 0 0 4px; /* 왼쪽 모서리 둥글게 */
   padding-left: 12px;
   box-sizing: border-box;
 }
@@ -50,17 +53,18 @@ header.container {
   padding-right: 12px;
   box-sizing: border-box;
   cursor: pointer;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0; /* 오른쪽 모서리 둥글게 */
 }
 
 .searchBar__btn:hover {
-  background-color: rgb(14, 70, 224);
+  background-color: rgb(14, 70, 224); /* 버튼에 마우스를 올렸을 때 색상 변경 */
 }
 
+/* 리스트 아이템 스타일 */
 .list-item {
   height: 34px;
   border: 1px solid black;
-  border-bottom: 0;
+  border-bottom: 0; /* 마지막 아이템을 제외하고 테두리 제거 */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,24 +74,25 @@ header.container {
 }
 
 .list-item:first-child {
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0; /* 첫 번째 아이템의 상단 모서리 둥글게 */
 }
 
 .list-item:last-child {
-  border-radius: 0 0 8px 8px;
-  border-bottom: 1px solid black;
+  border-radius: 0 0 8px 8px; /* 마지막 아이템의 하단 모서리 둥글게 */
+  border-bottom: 1px solid black; /* 마지막 아이템의 하단 테두리 */
 }
 
 .list-item:only-child {
-  border-radius: 8px;
-  border-bottom: 1px solid black;
+  border-radius: 8px; /* 리스트에 아이템이 하나만 있을 경우, 모든 모서리를 둥글게 */
+  border-bottom: 1px solid black; /* 하단 테두리 */
 }
 
+/* 리스트 아이템의 삭제 버튼 스타일 */
 .list-item__btn {
   width: 20px;
   background-color: transparent;
   outline: none;
   border: 0;
   font-weight: 700;
-  cursor: pointer;
+  cursor: pointer; /* 버튼에 커서를 올렸을 때 포인터로 변경 */
 }
